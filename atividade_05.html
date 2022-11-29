@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade05</title>
+</head>
+<body>
+
+<h1>Horas</h1>
+<p>Horas: <span id="hora"></span></p>
+<p>Minutos: <span id="minutos"></span></p>
+<p>Segundos:<span id="segundos"></span></p>
+
+<p>Total em Segundos: <span id="Tsegundos"></span></p>
+
+<script> 
+let hora = Number (prompt("Digite as Horas"));
+let minutos = Number (prompt("Digites os minutos"));
+let segundos = Number (prompt("Digite os segundos"));
+let Tsegundos = ((hora*60*60)+(minutos*60)+ segundos);
+
+document.getElementById("hora").innerHTML=hora;
+document.getElementById("minutos").innerHTML=minutos;
+document.getElementById("segundos").innerHTML=segundos;
+document.getElementById("Tsegundos").innerHTML=Tsegundos;
+
+</script>
+    
+</body>
+</html>

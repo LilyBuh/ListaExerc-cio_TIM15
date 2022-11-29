@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade04</title>
+</head>
+<body>
+
+    <h1> Escola Estadual do Ceára</h1>
+
+    <p>Aluno(a): <span id="aluno"></span>         </p>
+    <p>Português: <span id="nota1"></span>       </p>
+    <p>Matemática: <span id="nota2"></span>     </p> 
+    <p>História:    <span id="nota3"></span>   </p>
+    <p>Turma:        <span id="turma"></span> </p>  
+
+    <script>
+let aluno = prompt("Digite o nome do Aluno"); 
+let nota1 = Number (prompt("Digite a nota de português"));
+let nota2 = Number (prompt("Digite a nota de matemática"));
+let nota3 = Number (prompt("Digite a nota de história"));
+let turma = prompt ("Digite a turma do Aluno");
+
+document.getElementById("nota1").innerHTML= nota1;
+document.getElementById("nota2").innerHTML= nota2;
+document.getElementById("nota3").innerHTML= nota3;
+document.getElementById("aluno").innerHTML= aluno;
+document.getElementById("turma").innerHTML= turma;
+
+
+
+    </script>
+</body>
+</html>

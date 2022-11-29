@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade03</title>
+</head>
+<body>
+ <h1>Nota e Frequência do aluno</h1>
+
+ <p>Aluno:  <span id="aluno"> </span>    </p>
+ <p>Nota 1: <span id="nota1"> </span>    </p>
+ <p>Nota 2: <span id="nota2"> </span>    </p>
+ <p>Nota 3: <span id="nota3"> </span>    </p>
+ <p>Frequência:<span id="frequencia"> </span> </p>
+
+ <script> 
+let aluno = prompt("Digite o nome do aluno");
+let nota1 = Number (prompt("Digite a nota 1 do aluno"));
+let nota2 = Number (prompt("Digite a nota 2 do aluno"));
+let nota3 = Number (prompt("Digite a nota 3 do aluno"));
+let frequencia = prompt("Digite a frequência do aluno");
+
+document.getElementById("aluno").innerHTML = aluno;
+document.getElementById("nota1").innerHTML = nota1;
+document.getElementById("nota2").innerHTML = nota2;
+document.getElementById("nota3").innerHTML = nota3;
+document.getElementById("frequencia").innerHTML = frequencia;
+
+</script>
+
+</body>
+</html>

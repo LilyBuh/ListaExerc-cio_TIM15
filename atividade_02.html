@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade02</title>
+</head>
+<body>
+    <h1> Diciplinas Escolares</h1>
+
+    <p>Nome: <span id="nome"> </span></p>
+    <p>Descrição:<span id="descricao"> </span></p>
+    <p>Frequência:<span id="frequencia"> </span></p>
+    <p>Nota 1: <span id="nota1"> </span></p>
+    <p>Nota 2: <span id="nota2"> </span></p>
+    <p>Média: <span id="media"> </span></p>
+    <p>Média Mínima de Aprovação: 12</p>
+    
+    <script> 
+    let nome = prompt("Digite o nome do aluno");
+    let descricao = prompt("Digite sobre o aluno");
+    let frequencia = prompt("Digite a frequência do aluno");
+    let nota1 = Number (prompt("Digite a nota um do aluno"));
+    let nota2 = Number (prompt("Digite a nota dois do aluno"));
+    let media = ((nota1 + nota2)/2);
+
+
+    document.getElementById("nome").innerHTML = nome;
+    document.getElementById("descricao").innerHTML = descricao;
+    document.getElementById("frequencia").innerHTML = frequencia;
+    document.getElementById("nota1").innerHTML = nota1;
+    document.getElementById("nota2").innerHTML = nota2;
+    document.getElementById("media").innerHTML = media;
+
+    </script>
+</body>
+</html>
