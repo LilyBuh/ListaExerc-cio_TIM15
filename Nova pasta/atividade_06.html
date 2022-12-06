@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade_06</title>
+
+</head>
+<body>
+<h1>Doceria VAZ</h1>
+
+<p>Total de vendas mensais: <span id="mensal">      </span>   </p>
+<p>Total de vendas semestrais: <span id="semestre"> </span>  </p>
+<p>Total de vendas Anuais: <span id="ano">        </span>   </p>
+
+<script>
+
+let mensal = Number (prompt("Digite o valor de vendas mensais"));
+let semestre = (mensal * 6);
+let ano = (mensal * 12);
+
+document.getElementById("mensal").innerHTML= mensal;
+document.getElementById("semestre").innerHTML= semestre;
+document.getElementById("ano").innerHTML= ano;
+
+</script>
+    
+</body>
+</html>

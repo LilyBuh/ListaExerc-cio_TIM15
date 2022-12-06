@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade07</title>
+
+</head>
+<body>
+
+    <h1>Banco Bradesco</h1>
+
+    <p>Correntista: <span id="nome"></span></p>
+    <p>Número da conta:<span id="conta"></span></p>
+    <p>Saldo disponível:<span id="saldo1"></span> </p>
+    <p>Limite de crédito:<span id="credito"> </span></p>
+    <p>Fatura: <span id="fatura"> </span></p>
+    <p>Saldo atual:<span id="saldo2"></span></p>
+    
+    <script>
+
+let nome = prompt("Digite seu nome");
+let conta = "35756-8"
+let credito = Number (5000);
+let fatura  = Number   (500);
+let saldo1  = Number (2000);
+let saldo2  = (saldo1 + credito) - fatura    
+
+
+document.getElementById("nome").innerHTML = nome;
+document.getElementById("conta").innerHTML = conta;
+document.getElementById("credito").innerHTML = credito;
+document.getElementById("fatura").innerHTML = fatura;
+document.getElementById("saldo1").innerHTML = saldo1;
+document.getElementById("saldo2").innerHTML = saldo2;
+
+    </script>
+
+
+    
+</body>
+</html>

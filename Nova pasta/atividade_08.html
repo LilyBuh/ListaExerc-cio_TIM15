@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade08</title>
+</head>
+<body>
+    
+    <h1>Ifood 2</h1>
+
+    <p1>Cliente: <span id="nome"> </span></p1>
+    <p>Menu</p>
+
+    <p>Hot dog R$ 1,00 (<span id="hot"></span>) </p>
+    <p>Hambúrguer R$ 1,30  (<span id="bur"></span>)</p>    
+    <p>Cheeseburguer R$ 1,50 (<span id="chees"></span>)</p>    
+    <p>Refrigerante em lata 250 ml R$ 1,00 (<span id="lata"></span>)</p>      
+    <p>Batatas fritas R$ 0,80 (<span id="batata"></span>)</p>    
+    <p>Total: R$ <span id="total"></span> </p>
+
+    <script>
+let hot = Number (prompt("Digite a quantidade de Hot Dog"));
+let bur = Number (prompt("Digite a quantidade de hambúrguer"));
+let chees = Number (prompt("Digite a quantidade de Cheeseburguer"));
+let lata = Number (prompt("Digite a quantidade de Refrigerante em lata"));
+let batata = Number (prompt("Digite a quantidade de Batata frita"));
+let nome = (prompt("Digite seu nome"));
+let total = (hot * 1)+(bur * 1.3)+(chees * 1.5)+(lata * 1)+(batata * 0.8);
+
+document.getElementById("nome").innerHTML = nome;
+document.getElementById("bur").innerHTML = bur;
+document.getElementById("hot").innerHTML = hot;
+document.getElementById("chees").innerHTML = chees;
+document.getElementById("lata").innerHTML = lata;
+document.getElementById("batata").innerHTML = batata;
+document.getElementById("total").innerHTML = total;
+
+    </script>
+        
+       
+</body>
+</html>

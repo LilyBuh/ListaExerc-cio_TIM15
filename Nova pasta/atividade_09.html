@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Casa De Câmbio</h1>
+
+    <p>Valor Do Dólar: 5,5</p>
+
+    <p>Dólar a ser Transformado: <span id="dol"></span></p>
+
+    <p>Valor Transformado:<span id="valor"></span></p>
+
+    <script>
+
+let dol = Number (prompt("Digite a quantidade que você deseja trocar"));
+let valor = (5.5 * dol); 
+
+document.getElementById("dol").innerHTML = dol;
+document.getElementById("valor").innerHTML =valor;
+
+    </script>
+    
+</body>
+</html>
